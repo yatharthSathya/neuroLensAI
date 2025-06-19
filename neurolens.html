@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neurolens AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="neurolens.css" />
+</head>
+<body class="bg-gray-100 h-screen flex flex-col">
+
+  <header class="bg-purple-700 text-white p-4 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="font-bold text-xl"><i class="fas fa-brain mr-2"></i> Neurolens AI</h1>
+      <span class="text-sm opacity-80">Prototype v1.0</span>
+    </div>
+  </header>
+
+  <main class="flex-1 container mx-auto p-4 flex flex-col">
+    <div id="chat-container" class="flex-grow overflow-y-auto bg-white rounded-lg shadow p-4 mb-2">
+      <div id="messages" class="space-y-4">
+        <div class="bot-message bg-purple-100 text-purple-800 p-3 rounded-lg shadow max-w-[75%]">
+          Welcome to Neurolens AI. Paste or type text you'd like analyzed for subtle signs of cognitive anomalies.
+        </div>
+      </div>
+    </div>
+
+    <form id="chat-form" class="mt-auto">
+      <div class="flex rounded-lg border bg-white overflow-hidden shadow">
+        <textarea id="user-input" rows="1" placeholder="Type or paste text here..." class="flex-1 px-3 py-2 focus:outline-none resize-none"></textarea>
+        <button type="submit" class="bg-purple-700 text-white px-5 hover:bg-purple-800 transition">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <script src="neurolens.js"></script>
+</body>
+</html>
