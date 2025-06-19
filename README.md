@@ -33,8 +33,7 @@ Neurolens AI uses a large language model (LLM) backend to process journal entrie
 
 - Modular front-end + back-end architecture
 
-**Disclaimer**
-Neurolens AI is a prototype designed for educational and research purposes. It is not intended for medical diagnosis or as a substitute for professional medical advice.
+
 
 **Future improvements**
 - Incorporate more detailed risk scoring and visualizations
